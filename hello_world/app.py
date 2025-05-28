@@ -4,6 +4,8 @@ import json
 
 
 def lambda_handler(event, context):
+
+    
     """Sample pure Lambda function
 
     Parameters
@@ -32,6 +34,8 @@ def lambda_handler(event, context):
     #     print(e)
 
     #     raise e
+    if True:
+        raise Exception("this will cause a rollback")
 
     return {
         "statusCode": 200,
